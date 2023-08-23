@@ -25,3 +25,25 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# Angular Component Life-Cycle-Hooks
+
+##### ngOnChange
+
+--> This is first hook after constructor ngOnChange use interface when you use ngOnChange implementes interface and this hooks pass arrguments. this is only hook pass the arrguments
+
+**constructor(){ --- }**
+
+**ngOnchange(changes: simpleChanges){ --- }**
+
+**ngOnInit(){ --- }**
+
+--------------Calling-------------
+
+**1. constructor**
+
+**2. ngOnChange**
+
+**3. ngOnInit**
+
+**Implmentation Steps :=**

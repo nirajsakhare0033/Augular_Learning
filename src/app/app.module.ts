@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { ChildNgonchangeComponent } from './child-ngonchange/child-ngonchange.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LifeCycleComponent
+    LifeCycleComponent,
+    ChildNgonchangeComponent
   ],
   imports: [
     BrowserModule,
