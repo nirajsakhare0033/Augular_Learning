@@ -46,4 +46,28 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 **3. ngOnInit**
 
-**Implmentation Steps :=**
+**Implmentation Steps := Child Component type this code**
+
+```child.component.ts
+
+constructor() {
+    console.log('constructor call');
+  }
+  @Input() userinput: string = '';
+  ngOnInit() {
+    console.log('ngOnInit call');
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    console.log('ngOnChanges call');
+    console.log(changes['userinput'].currentValue);
+  }
+```
+
+ngOnChanges have 3 Values = 
+
+1.current value:
+
+2.firstchanges:
+
+3.previous value:
