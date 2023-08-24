@@ -5,5 +5,7 @@
 <div>
   User Name: <input type="text" #box>
   <button (click)="updateParent(box)">Update</button>
-  <app-child-ngonchange [userinput]="value"></app-child-ngonchange>
+  <app-child-ngonchange *ngIf="exits" [userinput]="value">ngAfterContent: {{value}}</app-child-ngonchange>
+  <br>
+  <button (click)="ngondestroy()" class="btn btn-danger">button</button>
 </div>

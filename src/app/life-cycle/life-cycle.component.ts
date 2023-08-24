@@ -6,10 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./life-cycle.component.css'],
 })
 export class LifeCycleComponent {
- value:string =""
-  
+  value: string = '';
 
-  updateParent(box:any){
-    this.value=box.value;
+  //ngondestroy
+  exits: boolean = true;
+  ngondestroy(){
+    this.exits=false;
+  }
+
+  updateParent(box: any) {
+    this.value = box.value;
   }
 }
