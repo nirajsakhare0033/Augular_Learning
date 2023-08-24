@@ -10,8 +10,21 @@ export class ChildNgonchangeComponent {
     console.log('constructor call');
   }
   @Input() userinput: string = '';
+
+  counter:any;
+  num:number=1;
+
+  
+
   ngOnInit() {
     console.log('ngOnInit call');
+    this.counter=setInterval(()=>{
+      this.num=this.num+1;
+      console.log(this.num);
+      
+    })
+
+    
   }
 
   ngOnChanges(changes: SimpleChanges) {
@@ -47,6 +60,7 @@ export class ChildNgonchangeComponent {
 
   ngOnDestroy(){
     console.log("ngOnDestroy called");
+    clearInterval(this.counter)
     
   }
 }
