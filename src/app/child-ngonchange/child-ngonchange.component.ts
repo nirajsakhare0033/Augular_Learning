@@ -6,8 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./child-ngonchange.component.css']
 })
 export class ChildNgonchangeComponent {
-
-
-  @Input() userinput:string='';
+@Input() userinput:string='';
+constructor(){}
+ 
 
 }

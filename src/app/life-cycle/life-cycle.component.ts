@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./life-cycle.component.css'],
 })
 export class LifeCycleComponent {
-  parentData:string=''
+ value:string =""
+  
+
+  updateParent(box:any){
+    this.value=box.value;
+  }
 }
